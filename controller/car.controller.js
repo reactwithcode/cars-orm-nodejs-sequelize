@@ -58,7 +58,8 @@ class CarController {
                 id: id
             }
         })
-
+        
+        // return updateded data instead of "1"
         const resp = await this.getById(id)
 
 
