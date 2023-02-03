@@ -1,7 +1,7 @@
 // 3a
 const router = require('express').Router();
 // 4a
-const car = require('../controller/toyota.controller');
+const car = require('../controller/car.controller');
 
 // 5
 // npm i sequelize-cli -g(if not yet), sequelize init ==> adjust config.json file
@@ -29,7 +29,7 @@ router.get("/", (req, res, next) => {
 
 router.get('/search', (req, res, next) => {
     console.log(req.query)
-    carClass.search(req.query.name)
+    carClass.search(req.query?.name)
         .then(data => {
             return res.status(200).json({
                 data

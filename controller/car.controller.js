@@ -1,5 +1,7 @@
  // 9a
  const { Car } = require('../models/index')
+ // 10 Operator sequelize
+ const { Op } = require("sequelize");
 
 //4b
 class CarController {
@@ -38,7 +40,7 @@ class CarController {
             name: body.name,
             kubikasi_mesin: body.kubikasi_mesin,
             transmisi: body.transmisi,
-            pengerak_roda: body.penggerak_roda
+            penggerak_roda: body.penggerak_roda
         })
 
         return create

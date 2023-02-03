@@ -3,7 +3,7 @@
 const express = require('express');
 const app = express();
 // 2a
-const carsRoute = require('./routes/toyota.route');
+const carsRoute = require('./routes/car.route');
 
 // 1b
 require('dotenv').config();
