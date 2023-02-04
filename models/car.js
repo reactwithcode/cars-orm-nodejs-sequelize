@@ -28,6 +28,13 @@ module.exports = (sequelize, DataTypes) => {
     penggerak_roda: { 
       type: DataTypes.STRING
     },
+    // 10a
+    is_active: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+      allowNull: false
+    },
+    // 10b sequelize db:migrate
     // 6c
     createdAt: {
       type: DataTypes.DATE,
