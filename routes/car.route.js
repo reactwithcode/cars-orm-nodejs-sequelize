@@ -5,7 +5,7 @@ const car = require('../controller/car.controller');
 
 // 5
 // npm i sequelize-cli -g(if not yet), sequelize init ==> adjust config.json file
-// 5b sequalize db:create (to create database) according to config.json
+// 5b sequelize db:create (to create database) according to config.json
 
 // 4c
 const carClass = new car();
